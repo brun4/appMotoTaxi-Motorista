@@ -3,10 +3,15 @@ import { Text, View, Image, TouchableOpacity } from "react-native";
 import { styles } from "../../style/style";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function Perfil() {
+export default function Perfil({navigation}) {
   return (
   
     <View>
+      <View style={styles.hojebtn1}>
+        <TouchableOpacity style={styles.hojeTouch1} onPress={() => navigation.navigate("Apresentação")}>
+            <Icon name="angle-left" style={styles.ico1} size={20}/>
+        </TouchableOpacity>            
+      </View>
 
       <Text style={styles.perfil1} > Meu Perfil </Text>
 
@@ -24,7 +29,15 @@ export default function Perfil() {
       </View>
 
       <View>
-        <Text style={styles.perfil2}>{`Telefone \n 11-99558-5489`}</Text>
+        <Text style={styles.perfil2}>{`CPF \n 294.XXX.025X-25`}</Text>
+      </View>
+
+      <View>
+        <Text style={styles.perfil2}>{`Telefone \n 88-99558-5489`}</Text>
+      </View>
+
+      <View>
+        <Text style={styles.perfil2}>{`Endereço \n Rua José Bonifácio, 789 - Ceará - SP`}</Text>
       </View>
 
       <View style={styles.perfil2}>
@@ -35,7 +48,7 @@ export default function Perfil() {
       
       <View style={styles.perfilbtn}>
         <TouchableOpacity style={styles.perfilTouch}>
-        <Text style={styles.perfilText}>Editar dados</Text></TouchableOpacity>                 
+        <Text style={styles.perfilText}>Solicitar alteração</Text></TouchableOpacity>                 
       </View>
 
     </View>

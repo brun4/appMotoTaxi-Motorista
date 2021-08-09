@@ -1,14 +1,29 @@
 import React from "react";
-import { Text, View, ImageBackground} from "react-native";
+import { Text, View, ImageBackground, TouchableOpacity} from "react-native";
 import { styles } from "../../style/style";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-
-export default function AceitarCorrida() {
+export default function HistoricoHoje({navigation}) {
   return (
 
     <ImageBackground style={styles.historicoHojeBack} source={require('../../images/foto.png')}>
     
+          
+    <View style={styles.hojebtn2}>
+        <View>
+          <TouchableOpacity style={styles.hojeTouch1} onPress={() => navigation.navigate("Historico Mensal")}>
+              <Icon name="angle-left" style={styles.ico1} size={20}/>
+          </TouchableOpacity> 
+        </View> 
+
+        <View>
+          <TouchableOpacity style={styles.hojeTouch1} onPress={() => navigation.navigate("Apresentação")}>
+              <Ionicons name="home" style={styles.ico2} size={20}/>
+          </TouchableOpacity>
+        </View>            
+    </View>
+
     <View style={styles.container}>
 
       <View style={styles.container2}>
@@ -26,16 +41,11 @@ export default function AceitarCorrida() {
      
     </View>
 
-    <View style={styles.container4}>
-          <View style={styles.ico}>
-            <Icon name="angle-double-up"size={30}/>
-          </View>
-          <Text style={styles.text4}>Sair</Text>
-          <View style={styles.ico}>
-            <Icon name="bars" size={30}/>
-          </View>
-        </View>
-
+      <View style={styles.hojebtn}>
+        <TouchableOpacity style={styles.hojeTouch}>
+        <Text style={styles.hojeText}>Sair    X</Text>    
+        </TouchableOpacity>            
+      </View>
     </ImageBackground>   
   );
 }

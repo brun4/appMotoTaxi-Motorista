@@ -37,6 +37,7 @@ export default function Mapa(){
 
 
     return(
+        
         <View style={styles.servicos}>
             <MapView style={styles.map}
                 initialRegion={origin}

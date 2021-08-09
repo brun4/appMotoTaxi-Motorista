@@ -1,10 +1,19 @@
 import React from "react";
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import { styles } from "../../style/style";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function ConfirmarCorrida() {
+
+export default function ConfirmarCorrida({navigation}) {
   return (
     <View>
+      
+      <View style={styles.hojebtn1}>
+        <TouchableOpacity style={styles.hojeTouch1} onPress={() => navigation.navigate("Perfil")}>
+            <Icon name="angle-left" style={styles.ico1} size={20}/>
+        </TouchableOpacity>            
+      </View>
+
       <View>
         <Image
           style={styles.confirmarCorridaImg3}
@@ -23,7 +32,7 @@ export default function ConfirmarCorrida() {
       </View>
 
       <View style={styles.confirmaCorridaTouch}>
-        <TouchableOpacity style={styles.corridaTouch}  onPress={() => navigation.navigate("ConfirmarCorrida")}>
+        <TouchableOpacity style={styles.corridaTouch}  onPress={() => navigation.navigate("Iniciar Corrida")}>
           <View>
             <Text style={styles.corridaText1}>Aceitar</Text>
           </View>

@@ -329,6 +329,8 @@ loginText1:{
     // width:400,
   },
 
+  //HistoricoHoje
+
   container2: {
     backgroundColor: "white",
     borderWidth: 1,
@@ -372,16 +374,88 @@ loginText1:{
   },
 
   container4: {
+    alignItems:'center',
+    backgroundColor:'#FFC107',
+    borderRadius:50,
     flexDirection: "row",
     justifyContent: "center",
     backgroundColor: "white",
-    height: 80,
-    width: 450,
+    height: 50,
+    width: 300,
   },
+
+  hojebtn:{
+    justifyContent:'center',
+    alignItems:'center',
+    width:'100%',
+  },
+
+  hojeTouch:{
+    alignItems:'center',
+    backgroundColor:'#FFC107',
+    borderRadius:20,
+    flexDirection:'row',
+    height:30,
+    justifyContent:'center',
+    marginBottom:30,
+    width:200,
+  },
+
+  hojebtn1:{
+    justifyContent:'flex-start',
+    alignItems:'flex-start',
+    marginLeft:10,
+    width:'100%',
+  },
+
+  
+  hojebtn2:{
+    alignItems:'flex-start',
+    flexDirection:'row',
+    justifyContent:'flex-start',
+    marginLeft:10,
+    width:'100%',
+  },
+
+  hojeTouch1:{
+    backgroundColor:'#FFC107',
+    borderRadius:20,
+    height:30,
+    marginTop:20,
+    margin:2,
+    width:30,
+  },
+
+  ico1:{
+    alignItems:'center',
+    justifyContent:'center',
+    marginLeft:10,
+    marginTop:3,
+  },
+
+  
+  ico2:{
+    alignItems:'center',
+    justifyContent:'center',
+    marginLeft:5,
+    marginTop:3,
+  },
+
+  
+
+  
+  hojeText: {
+    alignItems:'center',
+    fontSize: 20,
+    // marginTop: 10,
+    textAlign: "center",
+  },
+
 
   ico: {
     padding: 20,
     margin: 10,
+
   },
 
   // Aceitar Corrida1
@@ -411,8 +485,20 @@ loginText1:{
     borderWidth:1,
     borderRadius:50,
     justifyContent:'center',
+    marginBottom:10,
     height:100,
     width:100,
+  },
+
+  container9:{
+    alignItems:'center',
+    backgroundColor:'blue',
+    borderColor:'white',
+    borderWidth:1,
+    borderRadius:50,
+    height:90,
+    justifyContent:'center',
+    width:90,
   },
 
   container7:{
@@ -443,7 +529,7 @@ loginText1:{
   container8:{
     flexDirection:'row',
     alignItems:'center',
-    justifyContent:'center',
+    justifyContent:'space-around',
   },
 
 });

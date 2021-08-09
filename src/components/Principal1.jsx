@@ -24,11 +24,12 @@ return(
                 <Drawer.Screen name="Apresentação" component={Apresentacao} />
                 {/* <Drawer.Screen name="Capa" component={Capa} /> */}
                 {/* <Drawer.Screen name="Login" component={Login} /> */}
-                <Drawer.Screen name="Confirmar" component={ConfirmarCorrida} />
+  
                 <Drawer.Screen name="Perfil" component={Perfil} />
                 <Drawer.Screen name="Mapa" component={Mapa} />
-                <Drawer.Screen name="Aceitar Corrida" component={AceitarCorrida1} />
-                <Drawer.Screen name="Histórico Mensal" component={HistoricoGanhos} />
+                <Drawer.Screen name="Confirmar" component={ConfirmarCorrida} />
+                <Drawer.Screen name="Iniciar Corrida" component={AceitarCorrida1} />
+                <Drawer.Screen name="Historico Mensal" component={HistoricoGanhos} />
                 <Drawer.Screen name="Úlimas Corridas" component={HistoricoHoje} />
             </Drawer.Navigator>
     </>

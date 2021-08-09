@@ -1,11 +1,19 @@
 import React from "react";
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import { styles } from "../../style/style";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function HistoricoGanhos() {
+export default function HistoricoGanhos({navigation}) {
   return (
   
     <View>
+
+      <View style={styles.hojebtn1}>
+        <TouchableOpacity style={styles.hojeTouch1} onPress={() => navigation.navigate("Iniciar Corrida")}>
+            <Icon name="angle-left" style={styles.ico1} size={20}/>
+        </TouchableOpacity>  
+                  
+      </View>
 
       <Text style={styles.historicoGanhos1}> Histórico de Ganhos </Text>
 
